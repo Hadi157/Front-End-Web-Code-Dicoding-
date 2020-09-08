@@ -16,7 +16,7 @@ class MealList extends HTMLElement {
         this.shadowDOM.innerHTML = "";
         this._meals.forEach(meal => {
             const mealItemElement = document.createElement("meal-item");
-            mealItemElement.meal = meal;
+            mealItemElement.results = meal;
             this.shadowDOM.appendChild(mealItemElement);
         })
     }
